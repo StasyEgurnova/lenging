@@ -412,7 +412,6 @@
           </div>
         </div>
       </div>
-      <div class="img_gorod"></div>
 
     </section>
 
@@ -426,27 +425,77 @@
         <h3 class="questions_title h3_title">have any questions?</h3>
 
         <form action="#" class="questions_form">
-          <label class="label_questions label" for="name3">Name<br>
-            <input id="name3" class="input_questions input" type="text" name="Name3" placeholder="What is your name:">
-          </label>
-          <label class="label_questions label" for="phone2">Phone<br>
-            <input id="phone3" class="input_questions input" type="text" name="Phone3" placeholder="Your phone number:">
-          </label>
-          <label class="label_questions label" for="Question">Email<br>
+          <div class="wrap_name_phone">
+            <label class="label_questions label" for="name3">Name<br>
+              <input id="name3" class="input_questions input" type="text" name="Name3" placeholder="What is your name:">
+            </label>
+            <label class="label_questions label" for="phone3">Phone<br>
+              <input id="phone3" class="input_questions input" type="text" name="Phone3" placeholder="Your phone number:">
+            </label>
+          </div>
+          <label class="label_questions label" for="Question">Question<br>
             <input id="Question" class="input_questions input" type="text" name="Question" placeholder="I want to know:">
           </label>
-
-          <input type="checkbox" class="questions_checkbox" id="agree3" name="agree3">
-          <label for="agree3">I agree to the processing of personal data</label>
-
+          <div>
+            <input type="checkbox" class="questions_checkbox" id="agree3" name="agree3">
+            <label for="agree3">I agree to the processing of personal data</label>
+          </div>
           <button class="button button_questions" type="submit">Submit</button>
         </form>
 
       </div>
     </section>
-<!--Questions end-->
 
+  <!--Questions end-->
 
+  <!--Map start-->
+    <section class="map">
+      <div class="container container_map">
+        <h3 class="map_title h3_title">Rostov-on-Don, Nansen St., 239 Shopping Center<br> Decorum Tel +7 (928) 768 32 29</h3>
+        <div class="map_icon">
+          <img src="images/svg/mail_icon.svg" alt="mail_icon" class="mail_icon">
+          <img src="images/svg/insta_icon.svg" alt="insta_icon" class="insta_icon">
+        </div>
+        <div class="map_image">
+          <img src="images/map.jpg" alt="map">
+        </div>
+
+      </div>
+    </section>
+  <!--Map end-->
 </main>
+<!--footer start-->
+<footer class="footer">
+  <div class="container">
+    <div class="wrapper_footer">
+      <div class="logo"> IC "Repair Design Project </div>
+      <nav class="footer_nav">
+        <ul class="footer_list">
+          <li class="footer_item">
+            <a id="col" href="#1" class="footer_link">HOME</a>
+          </li>
+          <li class="footer_item">
+            <a href="#1" class="footer_link">PROJECTS</a>
+          </li>
+          <li class="footer_item">
+            <a href="#1" class="footer_link">MEASUREMENT</a>
+          </li>
+          <li class="footer_item">
+            <a href="#1" class="footer_link">TEAM</a>
+          </li>
+          <li class="footer_item">
+            <a href="#1" class="footer_link">REVIEWS</a>
+          </li>
+          <li class="footer_item">
+            <a href="#1" class="footer_link">CONTACTS</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer_tel">+7 (928) 768-32-39</div>
+      <button class="button button_footer">Request a call</button>
+    </div>
+  </div>
+</footer>
+<!--footer end-->
 </body>
 </html>
