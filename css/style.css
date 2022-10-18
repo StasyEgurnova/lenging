@@ -51,9 +51,15 @@ ul {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1440px;
+  padding: 0 15px;
 }
 
 .button {
@@ -71,7 +77,7 @@ ul {
 
 .svg_title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 5px;
   margin-top: 16px;
 }
 
@@ -215,6 +221,7 @@ ul {
     font-style: italic;
   }
 
+
 /* Header and Footer style end */
 
 /* Hero style start */
@@ -246,6 +253,7 @@ ul {
     line-height: 36px;
     color: #FFFFFF;
     margin-bottom: 41px;
+    width: 504px;
   }
 
   .div_hero_button {
@@ -338,6 +346,10 @@ ul {
     margin-bottom: 42px;
   }
 
+  .project_mobile{
+    display: none;
+  }
+
   .info {
     grid-column: 1;
     display: grid;
@@ -419,10 +431,9 @@ ul {
     width: 100%;
   }
 
-
   .img_play_svg {
     position: absolute;
-    top: 272px;
+    top: 271px;
   }
 
   .hr_camera {
@@ -430,7 +441,7 @@ ul {
     height: 2px;
     background-color: #E3B873;
     margin-bottom: 34px;
-    margin-top: 62px;
+    margin-top: 64px;
   }
 
   .camera_text {
@@ -646,17 +657,20 @@ ul {
     background-size: cover;
     height: 864px;
     position: relative;
-
   }
 
   .container_gallery {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding: 100px 0px;
+  }
+
+  .gallery_mobile {
+    display: none;
   }
 
   .wrap_gallery_left {
     margin-left: 99px;
+    margin-top: 137px;
   }
 
   .gallery_title {
@@ -671,10 +685,24 @@ ul {
   }
 
   .list_gallery li {
+    margin-bottom: 10px;
+  }
+
+  .gallery_item a {
     font-size: 20px;
     line-height: 38px;
     color: #FFFFFF;
-    margin-bottom: 10px;
+    text-decoration: none;
+  }
+
+  .gallery_item:first-child>a {
+    color: #E3B873;
+  }
+
+  .list_gallery li:first-child {
+    border-bottom: 2px solid #E3B873;
+    padding-bottom: 2px;
+    width: 157px;
   }
 
   .wrap_gallery_right {
@@ -683,7 +711,9 @@ ul {
   }
 
   .img_blok_1 {
-    margin-top: -141px;
+    margin-top: -41px;
+    width: 354px;
+    margin-right: 43px;
   }
 
   .img_blok_1 img {
@@ -691,7 +721,8 @@ ul {
   }
 
   .img_blok_2 {
-    margin-top: -212px;
+    margin-top: -112px;
+    width: 354px;
   }
 
   .img_blok_2 img {
@@ -723,7 +754,7 @@ ul {
     grid-column-gap: 54px;
     background-image: url(../images/town.jpg);
     background-size: 100% 100%;
-    width: 100%;
+    max-width: 100%;
     height: 809px;
     background-repeat: no-repeat;
   }
@@ -900,5 +931,363 @@ ul {
   }
 
 /* Map style end */
+
+/* Media start */
+ @media screen and (max-width: 768px) {
+
+  html {
+    box-sizing:content-box;
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 340px;
+    padding: 0 15px;
+  }
+
+  .header_list, .button_header, .footer {
+    display: none;
+  }
+
+  .header_tel {
+    text-decoration-line: none;
+    color: white;
+  }
+
+  .container_hero {
+   height: 476px;
+  }
+
+  .hero_title{
+    margin-bottom: 16px;
+    font-size: 23px;
+    line-height: 31px;
+    padding-top: 85px;
+  }
+
+  .hero_subtitle {
+    font-size: 14px;
+    line-height: 19px;
+    max-width: 100%;
+  }
+
+  .div_hero_button {
+    flex-direction: column;
+  }
+
+  .hero_button, .hero_button_transparent {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero_button {
+    margin-bottom: 26px;
+  }
+
+  .project {
+    height:max-content;
+  }
+
+  .container_project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu, .arrows, .photo_project {
+    display: none;
+  }
+
+  .project_title{
+    margin-top: 36px;
+    margin-bottom: 0;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    width: 229px;
+  }
+
+  .project_subtitle {
+    font-size: 11px;
+    line-height: 17px;
+    text-align: center;
+    margin: 20px 0px;
+  }
+
+  .project_mobile, .gallery_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 36px;
+  }
+
+  .photo_mobile{
+    position: relative;
+    z-index: 1;
+  }
+
+  .project_svg_mobile, .gallery_svg_mobile {
+    position: absolute;
+    z-index: 2;
+
+  }
+
+  .project_mobile_right {
+    margin-left: 241px;
+  }
+
+  .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .h3_info {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .span_info {
+    font-size: 11px;
+    line-height: 18px;
+  }
+
+  .city, .area, .time, .cost {
+    padding-right: 40px;
+  }
+
+  .camera {
+    background: #131313;
+    margin: 0;
+    z-index: 1;
+  }
+
+  .h3_title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .svg_title {
+    margin-bottom: 40px;
+  }
+
+
+  .img_play_svg {
+    width: 6em;
+    top: 180px;
+  }
+
+  .hr_camera {
+    margin-bottom: 21px;
+    margin-top: 28px;
+  }
+
+ .camera_text {
+   font-size: 11px;
+   line-height: 19px;
+   color:rgba(255, 255, 255, 1);
+  }
+
+  .label_request {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .request_form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input {
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    color: #FFFFFF;
+    width: 100%;
+
+  }
+  input[name="Phone"], input[name="Name"] {
+    margin-right: 0;
+  }
+
+  .input_request::placeholder {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .camera_checkbox+label {
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 60px;
+  }
+
+  .button_camera {
+    order: 2;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    top: 25px;
+  }
+
+  .types {
+    position: relative;
+    z-index: 1;
+  }
+
+  .types_title {
+    margin-top: 83px;
+  }
+
+  .types_cards {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 0px;
+  }
+
+  .types_card {
+    margin-bottom: 59px;
+  }
+
+  .types_card_wrap {
+    width: 270px;
+    height: 241px;
+    top: 0;
+    margin-top: -140px;
+    margin-left: 0px;
+    position: relative;
+  }
+
+  .types_card_h3 {
+    font-size: 15px;
+    line-height: 21px;
+    padding-bottom: 10px;
+    padding-top: 21px;
+  }
+
+  .card_spisok {
+    line-height: 22px;
+    color: #959595;
+  }
+
+  .card_spisok ul {
+    list-style: disc;
+  }
+
+  .card_button {
+    font-size: 15px;
+    line-height: 21px;
+    width: 190px;
+    height: 40px;
+    padding: 17px;
+    position: relative;
+    z-index: 2;
+    padding: 0;
+    top: 0;
+    margin-left: 0px;
+    margin-top: -23px;
+  }
+
+  .house_spisok_form,
+  .types_form_master,
+  .pig_text,
+  .wrap_gallery_left,
+  .wrap_gallery_right {
+    display: none;
+  }
+
+  .gallery {
+    background: #FFFFFF;
+    height: max-content;
+  }
+
+  .container_gallery {
+    display: block;
+    position: relative;
+  }
+
+
+  .gallery_mobile {
+    flex-direction: column;
+    position: absolute;
+    top: -213px;
+    z-index: 2;
+  }
+
+  .gallery_mobile_right {
+    margin-top: 100px;
+    margin-left: 241px;
+  }
+
+  .gallery_title_mobile {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 24px;
+    width: 310px;
+    text-align: center;
+  }
+
+  .clients {
+    display: none;
+  }
+
+  .questions {
+    background: #131313;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .container_questions {
+    width: 100%;
+    height: auto;
+  }
+
+  .questions_form {
+    align-items: flex-start;
+  }
+
+  .questions_title {
+    padding-top: 173px;
+  }
+
+  .wrap_name_phone {
+    display: inline;
+  }
+
+  #Question, .input_questions {
+    width: 340px;
+  }
+
+  #name3 {
+    margin-right: 0px;
+  }
+
+  .button_questions {
+    width: 100%;
+  }
+
+  .map {
+    background: #131313;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .map_image {
+    width: 100%;
+    height: 100%;
+    order: -1;
+    padding: 44px 0;
+    margin: 0;
+  }
+
+  .map_title {
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0 16px;
+  }
+
+  .map_title br {
+    display: none;
+  }
+}
+/* Media end */
 
 
